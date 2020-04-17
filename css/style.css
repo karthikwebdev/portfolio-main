@@ -207,6 +207,7 @@ section.w-100{
     position: relative;
     z-index: 0;
     padding:30px ;
+    cursor: pointer;
 }
 
 .swiper-slide::after{
@@ -252,7 +253,17 @@ section.w-100{
     border-radius: 20px;
     border: 2px solid white;
     margin: 5px;
+    transition: 250ms;
+    text-transform: capitalize;
 }
+
+.bullet:hover{
+    background-color: white;
+    color: #e22e45;
+    cursor: pointer;
+    font-weight: 900;
+}
+
 .bullets{
     flex-wrap: wrap;
     display: flex;
