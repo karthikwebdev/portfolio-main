@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,292 @@
     <!-- LINK CSS AND FAVICON FILES -->
     <link rel="shortcut icon" type="image/png" href="./imgs/favicon.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    <div class="fade-text-wrapper">
+        <div class="faded">karthik web dev mern javascript python coding programmer full stack web development react
+            mongodb nodejs express jquery dbms iot data sctructures algorithms passion developer html css js py java
+            bootstrap bulma mongoose monk flask tkinter aws git github ui ux arduino raspberry pi embeded systems
+            sensors </div>
+    </div>
     <!-- LANDING PAGE START -->
-    <div class="landing-page">
-        <div class="faded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor dicta at tempora veritatis. Earum, rem impedit inventore, nulla eum veniam quisquam ut perferendis laudantium molestias delectus architecto tempora blanditiis?</div>
+    <div class="landing-page" id="home">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 part-1">
                     <img src="./imgs/main img.jpg" class="main-img" width="50%" alt="">
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 part-2">
-                    <span class="h3">Hello...This is</span>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 part-2 mb-5">
+                    <span class="h3 bar-before">Hello...This is</span>
                     <div class="name">
                         <video autoplay muted loop>
                             <source src="./videos/1.mp4" type="video/mp4">
                         </video>
                         <h1 class="display-1">KARTHIK</h1>
                     </div>
-                    <p  class="h4"> MERN Stack Developer & Python Programmer </p>
-                    <a href="./pdf/main.pdf" class="btn btn-danger btn-lg mt-4" download="true">download cv</a>
+                    <p class="h4 bar-after"> MERN Stack Developer & Python Programmer </p>
+                    <a href="./pdf/main.pdf" class="btn btn-danger btn-lg mt-4" download="KARTHIK-resume">download
+                        CV</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- LANDING PAGE END -->
+    <!-- NAVBAR START -->
+    <nav id="navbar" style="position: sticky; top: 0;" class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand text-light" href="#">
+                <img src="./imgs/favicon.png" class="icon-img" height="40px">
+                Karthik Web Dev
+            </a>
+            <button class="navbar-toggler border-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- PROJECTS SECTION START -->
+    <section id="projects" class="w-100  pt-5">
+        <div class="fade-text-wrapper">
+            <div class="faded-projects">projects</div>
+        </div>
+        <h1 class=" text-center mt-5">
+            <span class="bar-before bar-after">PROJECTS</span>
+        </h1>
+        <div class="container">
+            <div class="swiper-container1 m-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-index="1">
+                        <h1>smart blind stick interfacing arduino</h1>
+                        <p>this is a IOT project that reduces problems faced by Visually impaired people.this has
+                            features like gps tracking,sensing surroundings and indication and around 10 more features
+                        </p>
+                        <div class="bullets">
+                            <div class="bullet">IOT</div>
+                            <div class="bullet">sensors</div>
+                            <div class="bullet">GPS</div>
+                            <div class="bullet">Arduino</div>
+                            <div class="bullet">embeded systems</div>
+                        </div>
+                        <div class="btns mb-2">
+                            <a href="#" class="btn btn-dark">repo</a>
+                            <a href="#" class="btn btn-dark">blog</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-index="2">
+                        <h1>T-Store E-Commerce Website</h1>
+                        <p>this is a full stack t-shirt store which is a open source personal project developed while
+                            completing MERN stack development course</p>
+                        <div class="bullets">
+                            <div class="bullet">React</div>
+                            <div class="bullet">MERN</div>
+                            <div class="bullet">Express</div>
+                            <div class="bullet">MongoDB</div>
+                            <div class="bullet">Node js</div>
+                        </div>
+                        <div class="btns">
+                            <a href="#" class="btn btn-dark">repo</a>
+                            <a href="#" class="btn btn-dark">blog</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-index="3">
+                        <h1>Attendance automation through face recognition</h1>
+                        <p>this is a full stack automated scalable web application developed to cut the problems of
+                            attendance system in the classroom and maintain dynamic database</p>
+                        <div class="bullets">
+                            <div class="bullet">node js</div>
+                            <div class="bullet">express</div>
+                            <div class="bullet">mongodb</div>
+                            <div class="bullet">face-recognition</div>
+                            <div class="bullet">API</div>
+                        </div>
+                        <div class="btns">
+                            <a href="#" class="btn btn-dark">repo</a>
+                            <a href="#" class="btn btn-dark">blog</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <h3 class="text-center space-up">#100daysofcode Honourable Mentions</h3>
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h3>recipee app</h3>
+                        <p>this is a website where you can know recipees of your favourite food with step by step
+                            procedure</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>birthday reminder app</h3>
+                        <p>this is a reminder application with features like adding a birthday and reminding on the
+                            birthdays</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>event registration app</h3>
+                        <p>this is a desktop application which has features of creating,updating,deleting a
+                            registrations</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>savings app</h3>
+                        <p>this is an application where you can write all your expenses in it and also maintain record
+                            of savings</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>commandline portfolio</h3>
+                        <p>this is a portfolio website which has commandline interface and get my resume by typing some
+                            pre-defined commands</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>covid-19 dashboard</h3>
+                        <p>this is a dashboard which consumes an open source api and represents in world maps with
+                            number of deaths,confirmed cases,recoverys.</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>TO-DO app using react</h3>
+                        <p> made a todo app using react which has create, read, update, delete to-do options</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>responsive mini portfolio design</h3>
+                        <p>a portfolio design just to brushup my skills in design and development</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3> Snapic</h3>
+                        <p>a simple selfie app where you can take a picture and save it locally</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>bingo/housie number caller</h3>
+                        <p>automated the process of calling numbers in bingo/housie game using javascript and google
+                            voice assistant</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>feedback form</h3>
+                        <p>star rating feedback form that takes the input from the stars and store the avg of all the
+                            inputs</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>puzzle game</h3>
+                        <p>this is a simple puzzle game where parts of images are scrambled and need to srrange the
+                            parts in correct order </p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>tic tac toe</h3>
+                        <p>most famous game for every developer.no developer bocomes developer without creating this
+                            game</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>rock paper scissors</h3>
+                        <p>a simple rock paper scissors game where you can play with the computer </p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3> double-it</h3>
+                        <p>this is a game which we used to play in our childhood where we need to double the same
+                            pictures</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>grab missing tile</h3>
+                        <p> this is a small game where you need to grab targeted number of empty tiles at a given
+                            certain time </p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>crazy button</h3>
+                        <p>this is a crazy button where if you try to catch it goes away from you.visit the page and hav
+                            fun</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>covid-19 bot</h3>
+                        <p>this is a simple covid-19 chatbot which replies to us for simple questions.</p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>track eye</h3>
+                        <p>this is an eye animation which tries to track your pointer. just a fun project. </p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>visit counter</h3>
+                        <p>this is a simple javascript program that counts the number of times you visited the website
+                        </p>
+                        <a href="#" class="btn btn-dark">visit</a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination" style="margin: -10%;z-index: 10000;"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <!-- PROJECTS SECTION END -->
+    <!-- SKILLS SECTION START -->
+    <section id="skills" class="w-100 pt-5 mt-5">
+        <div class="fade-text-wrapper">
+            <div class="faded-projects">SKILLS</div>
+        </div>
+        <h1 class=" text-center mt-5">
+            <span class="bar-before bar-after">SKILLS </span>
+        </h1>
+    </section>
+    <!-- SKILLS SECTION END -->
+    <!-- BLOGS SECTION START -->
+    <section id="blogs" class="w-100 pt-5">
+        <div class="fade-text-wrapper">
+            <div class="faded-projects">BLOGS</div>
+        </div>
+        <h1 class=" text-center mt-5">
+            <span class="bar-before bar-after">BLOGS </span>
+        </h1>
+    </section>
+    <!-- BLOGS SECTION END -->
     <!-- LINK SCRIPTS -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
