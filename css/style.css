@@ -56,6 +56,9 @@ html,body{
     background-color: #e22e45;
 }
 
+.drop-shadow{
+    box-shadow: 0 0 0 20px #e22e45;
+}
 
 /* landing page styling start */
 .landing-page{
@@ -82,8 +85,8 @@ html,body{
 .name video{
     position: absolute;
     top: 0;
-    left: 0;
-    margin-top: 1px;
+    left: 5px;
+    margin-top: 5px;
     width: 90%;
     height: 90%;
     object-fit: cover;
@@ -106,7 +109,7 @@ html,body{
 .faded{
     position: absolute;
     font-size: 5rem;
-    opacity: 0.6;
+    opacity: 0.8;
     color: rgba(0, 0, 0, 0.05);
     text-transform: uppercase;
     width: 100%;
@@ -175,6 +178,7 @@ h1.display-1{
 
 nav{
     z-index: 100;
+    box-shadow:inset 0px 10px 10px -10px black, 0 10px 10px -10px;
 }
 
 /* navbar styling end */
@@ -188,13 +192,26 @@ section.w-100{
 .faded-projects{
     position: absolute;
     font-size:15vw;
-    opacity: 0.6;
+    opacity: 0.8;
     color: rgba(0, 0, 0, 0.05);
     text-transform: uppercase;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     top: 0;
+    z-index: -1;
+}
+
+.faded-100{
+    position: absolute;
+    font-size:10vw;
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top: 60%;
     z-index: -1;
 }
 
@@ -262,7 +279,7 @@ section.w-100{
     background-color: white;
     color: #e22e45;
     cursor: pointer;
-    font-weight: 900;
+    font-weight: 100;
 }
 
 .bullets{
@@ -276,4 +293,14 @@ section.w-100{
     margin-top: 100px;
 }
 /* projects section styling end */
+
+/* skills section styling end */
+
+.b-b{
+    height: 100px;
+    border: 2px solid black;
+}
+
+
+/* skills section styling end */
 
