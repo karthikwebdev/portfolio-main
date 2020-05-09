@@ -7,53 +7,10 @@ html,body{
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
     position: relative;
     user-select: none;
-}
-
-
-.bar-before{
-    position: relative;
-}
-
-.bar-before:hover::before{
-    left: 20%;
-}
-
-.bar-before::before{
-    transition: 250ms ease-in-out;
-    content: "";
-    width: 50%;
-    height: 10%;
-    border-radius:10px ;
-    top: -10%;
-    left: 0;
-    position: absolute;
-    background-color: #e22e45;
-}
-
-
-.bar-after{
-    position: relative;
-}
-
-.bar-after:hover::after{
-    left: 10%;
-}
-
-.bar-after::after{
-    transition: 250ms ease-in-out;
-    content: "";
-    width: 50%;
-    height: 10%;
-    border-radius:10px ;
-    bottom: -20%;
-    left: 25%;
-    position: absolute;
-    background-color: #e22e45;
 }
 
 .drop-shadow{
@@ -109,11 +66,10 @@ html,body{
 .faded{
     position: absolute;
     font-size: 5rem;
-    opacity: 0.8;
+    opacity: 0.1;
     color: rgba(0, 0, 0, 0.05);
     text-transform: uppercase;
     width: 100%;
-    height: 100vh;
     margin: -100px;
     overflow: hidden;
     transform: rotateZ(45deg);
@@ -125,7 +81,6 @@ html,body{
     left: 0;
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
 }
 
 .part-1,.part-2{
@@ -185,18 +140,17 @@ nav{
 
 /* projects section styling start */
 
-section.w-100{
+section{
     position: relative;
 }
 
 .faded-projects{
     position: absolute;
     font-size:15vw;
-    opacity: 0.8;
+    opacity: 0.6;
     color: rgba(0, 0, 0, 0.05);
     text-transform: uppercase;
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     top: 0;
     z-index: -1;
@@ -209,7 +163,6 @@ section.w-100{
     color: rgba(0, 0, 0, 0.05);
     text-transform: uppercase;
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     top: 60%;
     z-index: -1;
@@ -296,10 +249,6 @@ section.w-100{
 
 /* skills section styling end */
 
-.b-b{
-    height: 100px;
-    border: 2px solid black;
-}
 
 
 /* skills section styling end */

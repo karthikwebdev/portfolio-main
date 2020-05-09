@@ -35,13 +35,13 @@ const navitems =  document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section");
 
 document.querySelector("body").addEventListener("scroll",()=>{
-  let max = sections[0]
+  let max = sections[0].id
   sections.forEach((section)=>{
     if(section.offsetTop < Math.floor(document.querySelector("body").scrollTop)+5){
       max = section.id
     }
+    console.log(section.offsetTop,document.body.scrollTop)
   })
-
   navitems.forEach((nav)=>{
     nav.classList.remove("active")
     if (max === nav.getAttribute("data-nav")){
